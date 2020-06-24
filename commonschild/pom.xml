@@ -1,0 +1,32 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.cogknit.enterprise</groupId>
+	<artifactId>commons-child</artifactId>
+	<version>master</version>
+	<packaging>jar</packaging>
+	<name>commonschild</name>
+	<description>Demo project for Spring Boot</description>
+
+	<parent>
+		<groupId>com.cogknit</groupId>
+		<artifactId>vic-child</artifactId>
+		<version>1.0.0</version>
+	</parent>
+
+
+	<dependencies>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>2.5</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+			<version>5.2.6.RELEASE</version>
+		</dependency>
+	</dependencies>
+</project>

@@ -1,0 +1,26 @@
+#Spring security unckeck on all the endpoints like /actutor/refresh
+management:
+  endpoints: 
+    web:
+      exposure:
+        include: '*'
+  security: 
+    enabled: false     
+server:
+  port: 8888
+ 
+spring:
+  config:
+    additional-location: file:/properties
+  cloud:
+    config:
+      server:
+        prefix: /config
+        native:
+          order: 1
+          search-locations:
+          - file:/properties
+        git: 
+          order: 2
+          uri: https://github.com/malajure/myapp-config-repo.git
+          default-label: master

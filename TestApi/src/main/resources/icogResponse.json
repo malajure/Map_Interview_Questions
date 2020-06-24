@@ -1,0 +1,610 @@
+{
+	"user": {
+		"uploadImage": {
+			"failed": {
+				"contentioexception": {
+					"status": "failed",
+					"responseMsg": "File not supported"
+				},
+				"notvaliduser": {
+					"status": "failed",
+					"responseMsg": "Provided Username is incorrect"
+				}
+			},
+			"success": {
+				"validuser": {
+					"status": "success",
+					"responseMsg": "success"
+				}
+			}
+		},
+		"changePassword": {
+			"failed": {
+				"exception": {
+					"status": "failed",
+					"responseMsg": "Internal Server Error"
+				}
+			}
+		},
+		"mobileDeviceToken": {
+			"failed": {
+				"exception": {
+					"status": "failed",
+					"responseMsg": "Internal Server Error"
+				},
+				"storedevictokenexception": {
+					"status": "failed",
+					"responseMsg": "Internal Server Error"
+				},
+				"invalidplatform": {
+					"status": "failed",
+					"responseMsg": "Invalid Platform supplied; expecting ios /android /browser as poosible values"
+				},
+				"notdevicetoken": {
+					"status": "failed",
+					"responseMsg": "Platform or Device tokens not found or invalid"
+				},
+				"propsisnull": {
+					"status": "failed",
+					"responseMsg": "Platform or Device tokens not found or invalid"
+				}
+			}
+		},
+		"group": {
+			"failed": {
+				"notvaliduser": {
+					"status": "failed",
+					"responseMsg": "please provide valid users"
+				},
+				"notvalidtitle": {
+					"status": "failed",
+					"responseMsg": "please provide valid title"
+				},
+				"alreadytitleexists": {
+					"status": "failed",
+					"responseMsg": "a group with the same title already exists"
+				},
+				"errorcreatingusergroup": {
+					"status": "failed",
+					"responseMsg": "error in creating user share group"
+				},
+				"notvalidgroupid": {
+					"status": "failed",
+					"responseMsg": "please provide a valid userGroupID"
+				},
+				"nogroupexits": {
+					"status": "failed",
+					"responseMsg": "no such group exists"
+				},
+				"notvalidusernameforedit": {
+					"status": "failed",
+					"responseMsg": "you are not the creator. Hence, you cannot edit the group"
+				},
+				"notvalidusernamefordelete": {
+					"status": "failed",
+					"responseMsg": "you are not the creator. Hence, you cannot delete the group"
+				}
+			},
+			"success": {
+				"createuser": {
+					"status": "success",
+					"responseMsg": "User group created successfully"
+				},
+				"updationgroup": {
+					"status": "success",
+					"responseMsg": "User group updated successfully"
+				},
+				"deletiongroup": {
+					"status": "success",
+					"responseMsg": "User group was deleted successfully"
+				}
+			}
+		},
+		"support": {
+			"failed": {
+				"badrequest": {
+					"status": "failed",
+					"responseMsg": "Bad Request"
+				},
+				"success": {
+					"sentmail": {
+						"status": "success",
+						"responseMsg": "Mail has been sent succesfully"
+					}
+				}
+			}
+		},
+		"bulk": {
+			"failed": {
+				"notsuppliedprops": {
+					"status": "failed",
+					"responseMsg": "results is Empty"
+				},
+				"usernamecheck": {
+					"status": "failed",
+					"responseMsg": "Please check UserName"
+				},
+				"invalidUserName": {
+					"status": "failed",
+					"responseMsg": "UserName is invalid"
+				},
+				"emailcheck": {
+					"status": "failed",
+					"responseMsg": "Please check Email id"
+				},
+				"firstnamecheck": {
+					"status": "failed",
+					"responseMsg": "Please check FirstName"
+				},
+				"lastnamecheck": {
+					"status": "failed",
+					"responseMsg": "Please check Lastname"
+				},
+				"gradecheck": {
+					"status": "failed",
+					"responseMsg": "Please check grade"
+				},
+				"bucheck": {
+					"status": "failed",
+					"responseMsg": "Please check business unit"
+				},
+				"gendercheck": {
+					"status": "failed",
+					"responseMsg": "Please check gender"
+				},
+				"phonecheck": {
+					"status": "failed",
+					"responseMsg": "Please check phone"
+				},
+				"bandcheck": {
+					"status": "failed",
+					"responseMsg": "Please check band"
+				},
+				"companycheck": {
+					"status": "failed",
+					"responseMsg": "Please check company"
+				},
+				"departmntcheck": {
+					"status": "failed",
+					"responseMsg": "Please check department"
+				},
+				"designationcheck": {
+					"status": "failed",
+					"responseMsg": "Please check designation"
+				},
+				"functioncheck": {
+					"status": "failed",
+					"responseMsg": "Please check function"
+				},
+				"subfunctioncheck": {
+					"status": "failed",
+					"responseMsg": "Please check SubFunction"
+				},
+				"locationcheck": {
+					"status": "failed",
+					"responseMsg": "Please check location"
+				},
+				"invaliddepartmentid": {
+					"status": "failed",
+					"responseMsg": "Department entered does not exist. Please contact your system administrator"
+				},
+				"invaliddesignationid": {
+					"status": "failed",
+					"responseMsg": "Designation entered does not exist. Please contact your system administrator"
+				},
+				"invaliddesignationfordept": {
+					"status": "failed",
+					"responseMsg": "Designation entered does not exist for Department. Please contact your system administrator"
+				},
+				"invalidfunid": {
+					"status": "failed",
+					"responseMsg": "Function entered does not exist. Please contact your system administrator"
+				},
+				"invalidsubfunid": {
+					"status": "failed",
+					"responseMsg": "SubFunction entered does not exist. Please contact your system administrator"
+				},
+				"invalidsubfunforfun": {
+					"status": "failed",
+					"responseMsg": "SubFunction entered does not exist for Function. Please contact your system administrator"
+				},
+				"invalidband": {
+					"status": "failed",
+					"responseMsg": "Band mentioned does not exist. Please contact your system administrator"
+				},
+				"invalidbu_id": {
+					"status": "failed",
+					"responseMsg": "Business unit mentioned does not exist. Please contact your system administrator"
+				},
+				"invalidlocation": {
+					"status": "failed",
+					"responseMsg": "Location mentioned does not exist. Please contact your system administrator"
+				},
+				"invalidcompany": {
+					"status": "failed",
+					"responseMsg": "Company mentioned does not exist. Please contact your system administrator"
+				},
+				"userexists": {
+					"status": "failed",
+					"responseMsg": "User with such UserName already exists in the system."
+				}
+			},
+			"success": {
+				"verified": {
+					"status": "PendingRegistration",
+					"responseMsg": "You may have already signed up with CRISIL Learning but could not complete the registration.\n Please click the activation link again to complete registration."
+				},
+				"notverified": {
+					"status": "PendingActivation",
+					"responseMsg": "You may have already signed up with CRISIL Learning but could not verify your account.\n Please click the activation link emailed to you earlier."
+				}
+			}
+		}
+	},
+	"v2": {
+		"sendAppInviteReminders": {
+			"failed": {
+				"notsuppliedscope": {
+					"status": "failed",
+					"responseMsg": "Provide atleast Scope or Users field"
+				},
+				"notvalidscopeid": {
+					"status": "failed",
+					"responseMsg": "Provide appropriate Scope ID"
+				}
+			},
+			"success": {
+				"supplyusername": {
+					"status": "success",
+					"responseMsg": " Provide file with  user name  who belongs to selected IC "
+				},
+				"noreminderuser": {
+					"status": "success",
+					"responseMsg": " No users were selected for reminders "
+				},
+				"mailedusers": {
+					"status": "success",
+					"responseMsg": " Reminder emails have been sent successfully "
+				}
+			}
+		},
+		"managePrivilege": {
+			"failed": {
+				"notcoporate": {
+					"status": "failed",
+					"responseMsg": "user does not have authority to assign this privilege"
+				},
+				"emptybu_id": {
+					"status": "failed",
+					"responseMsg": "User does not belong to a Businessunit"
+				},
+				"notauthorizeuser": {
+					"status": "failed",
+					"responseMsg": "user does not have authority to assign stakeholder privilege"
+				}
+			},
+			"success": {
+				"userprivilegesupdate": {
+					"status": "success",
+					"responseMsg": "user privileges updated successfully"
+				}
+			}
+		},
+		"sendAppInviteRemindersCSV": {
+			"failed": {
+				"notvalidfile": {
+					"status": "failed",
+					"responseMsg": "only csv files are allowed."
+				},
+				"notvalidfileexception": {
+					"status": "failed",
+					"responseMsg": "only csv files are allowed."
+				},
+				"notvalidfileuseridforfile": {
+					"status": "failed",
+					"responseMsg": "Provide file with prpoer user_id or provide proper header username"
+				}
+			}
+		},
+		"profileUpdate": {
+			"failed": {
+				"notband_idpresent": {
+					"status": "failed",
+					"responseMsg": "band mentioned is not present"
+				},
+				"notlocationpresent": {
+					"status": "failed",
+					"responseMsg": "location mentioned is not present"
+				},
+				"notbu_idpresent": {
+					"status": "failed",
+					"responseMsg": "business unit mentioned is not present"
+				},
+				"notdepartmentpresent": {
+					"status": "failed",
+					"responseMsg": "department mentioned is not present"
+				},
+				"notdesignationpresent": {
+					"status": "failed",
+					"responseMsg": "designation mentioned is not present"
+				},
+				"notfunctionpresent": {
+					"status": "failed",
+					"responseMsg": "function mentioned is not present"
+				},
+				"notsubfunctionpresent": {
+					"status": "failed",
+					"responseMsg": "subfunction mentioned is not present"
+				},
+				"notcompanypresent": {
+					"status": "failed",
+					"responseMsg": "company mentioned is not present"
+				}
+			},
+			"success": {
+				"profileupdation": {
+					"status": "success",
+					"responseMsg": "Profile Updated successfully"
+				}
+			}
+		},
+		"manage": {
+			"failed": {
+				"userexistsexception": {
+					"status": "failed",
+					"responseMsg": "User Exists in the System"
+				},
+				"deleted": {
+					"status": "failed",
+					"responseMsg": "User has been deleted already"
+				},
+				"notscopesupplied": {
+					"status": "failed",
+					"responseMsg": "Please provile some valid action"
+				},
+				"notuserexists": {
+					"status": "failed",
+					"responseMsg": "No such User Exists in the System"
+				}
+			}
+		}
+	},
+	"structure": {
+		"addcompany": {
+			"failed": {
+				"notcompanynamesupplied": {
+					"status": "failed",
+					"responseMsg": "error in creating company no company name given"
+				},
+				"notsuppliedsubscriptionenend": {
+					"status": "failed",
+					"responseMsg": "error in creating company no company name given"
+				},
+				"notinsertedcompany": {
+					"status": "failed",
+					"responseMsg": "Enter company Name is not correct "
+				},
+				"UncategorizedSQLException": {
+					"status": "failed",
+					"responseMsg": "Enter data is not correct or company is already present"
+				},
+				"DuplicateKeyException": {
+					"status": "failed",
+					"responseMsg": "Company is already present"
+				}
+			},
+			"success": {
+				"insertedcompany": {
+					"status": "success",
+					"responseMsg": "successfully inserted"
+				}
+			}
+		},
+		"updatecompany": {
+			"failed": {
+				"notsuppliedcompanyid": {
+					"status": "failed",
+					"responseMsg": "error in updating company, data is not sufficient"
+				},
+				"notsuppliedsubscriptionenend": {
+					"status": "failed",
+					"responseMsg": "error in updating company subscription end date"
+				},
+				"notcompanyexist": {
+					"status": "failed",
+					"responseMsg": "Failed no company present or field not present"
+				},
+				"UncategorizedSQLException": {
+					"status": "failed",
+					"responseMsg": "data passed is not correct "
+				}
+			},
+			"success": {
+				"updatedcompany": {
+					"status": "success",
+					"responseMsg": "successfully updated"
+				}
+			}
+		},
+		"getcompany": {
+			"failed": {
+				"notcompanyexists": {
+					"status": "failed",
+					"responseMsg": "no company present"
+				}
+			},
+			"success": {
+				"listcompany": {
+					"status": "success",
+					"responseMsg": "list of company"
+				}
+			}
+		},
+		"deletecompany": {
+			"failed": {
+				"userexistsforcompany": {
+					"status": "failed",
+					"responseMsg": "users are present for this company"
+				},
+				"notcompanyexists": {
+					"status": "failed",
+					"responseMsg": "no company present"
+				},
+				"notsuppliedcompanyid": {
+					"status": "failed",
+					"responseMsg": "error in updating company"
+				}
+			},
+			"success": {
+				"deletedcompany": {
+					"status": "success",
+					"responseMsg": "company deleted"
+				}
+			}
+		},
+		"add_company_image": {
+			"failed": {
+				"notvalidfileformat": {
+					"status": "failed",
+					"responseMsg": "only allowed format is jpeg,jpg,png,gif"
+				},
+				"notvalidfileformatexcept": {
+					"status": "failed",
+					"responseMsg": "only allowed images not any other file"
+				}
+			},
+			"success": {
+				"validfileformat": {
+					"status": "success",
+					"responseMsg": "file accepted"
+				},
+				"uploadedfile": {
+					"status": "success",
+					"responseMsg": "file uploaded successfully"
+				}
+			}
+		},
+		"update_company_image": {
+			"failed": {
+				"notcompanyexist": {
+					"status": "failed",
+					"responseMsg": "company is not present"
+				},
+				"notcompanyidsupplied": {
+					"status": "failed",
+					"responseMsg": "error in updating,data provided is not sufficient"
+				},
+				"ioexception": {
+					"status": "failed",
+					"responseMsg": "data provided is not appropriate"
+				}
+			},
+			"success": {
+				"updatedfile": {
+					"status": "success",
+					"responseMsg": "file updated successfully"
+				}
+			}
+		},
+		"delete_company_image": {
+			"failed": {
+				"notcompanyexist": {
+					"status": "failed",
+					"responseMsg": "company is not present"
+				},
+				"notcompanyidsupplied": {
+					"status": "failed",
+					"responseMsg": "error in updating,data provided is not sufficient"
+				}
+			},
+			"success": {
+				"deletedfile": {
+					"status": "success",
+					"responseMsg": "company LOGO DELETED"
+				}
+			}
+		},
+		"department": {
+			"failed": {
+				"notdepartmentexist": {
+					"status": "failed",
+					"responseMsg": "no department present"
+				}
+			},
+			"success": {
+				"listofdepartment": {
+					"status": "success",
+					"responseMsg": "list of departments"
+				}
+			}
+		},
+		"designation": {
+			"failed": {
+				"notdesignationexist": {
+					"status": "failed",
+					"responseMsg": "no designation present"
+				}
+			},
+			"success": {
+				"listofdesignations": {
+					"status": "success",
+					"responseMsg": "list of designations"
+				}
+			}
+		},
+		"band": {
+			"failed": {
+				"notbandexist": {
+					"status": "failed",
+					"responseMsg": "no band present"
+				}
+			},
+			"success": {
+				"listofbands": {
+					"status": "success",
+					"responseMsg": "list of bands"
+				}
+			}
+		},
+		"function": {
+			"failed": {
+				"notfunctionexist": {
+					"status": "failed",
+					"responseMsg": "no function present"
+				}
+			},
+			"success": {
+				"listoffunctions": {
+					"status": "success",
+					"responseMsg": "list of function"
+				}
+			}
+		},
+		"subfunction": {
+			"failed": {
+				"notsubfunctionexist": {
+					"status": "failed",
+					"responseMsg": "no Sub-Function present"
+				}
+			},
+			"success": {
+				"listofsubfunctions": {
+					"status": "success",
+					"responseMsg": "list of sub-functions"
+				}
+			}
+		},
+		"location": {
+			"success": {
+				"listoflocation": {
+					"status": "success",
+					"responseMsg": "list of locations"
+				},
+				"notlocationexist": {
+					"status": "failed",
+					"responseMsg": "no Location "
+				}
+			}
+		}
+	}
+}
